@@ -9,24 +9,25 @@ export default class App extends Component<{}> {
     return (
       <View style={styles.container}>
         <DragView style={styles.draggable} dragItem="Shared text">
-          <View>
-            <Text style={styles.title}>Draggable with a single item</Text>
-            <Text style={styles.details}>
-              Will share "Shared text" when dropped.
-            </Text>
-          </View>
+          <Text style={styles.title}>Draggable with a single item</Text>
+          <Text style={styles.details}>
+            Will share "Shared text" when dropped.
+          </Text>
         </DragView>
 
         <DragView
           style={styles.draggable}
           dragItems={["First item", "Second item"]}
         >
-          <View>
-            <Text style={styles.title}>Draggable with multiple items</Text>
-            <Text style={styles.details}>
-              Will share "First item" and "Second item" when dropped.
-            </Text>
-          </View>
+          <Text style={styles.title}>Draggable with multiple items</Text>
+          <Text style={styles.details}>
+            Will share "First item" and "Second item" when dropped.
+          </Text>
+        </DragView>
+
+        <DragView style={styles.draggable} dragItem="https://mattoakes.net">
+          <Text style={styles.title}>Draggable with a URL</Text>
+          <Text style={styles.details}>Will share a URL when dropped.</Text>
         </DragView>
       </View>
     );
