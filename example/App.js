@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   draggable: {
     width: 300,
-    backgroundColor: "#F5FCFF",
+    backgroundColor: "pink",
     borderRadius: 16,
     padding: 16,
     marginVertical: 16
