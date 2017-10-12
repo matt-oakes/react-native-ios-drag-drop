@@ -8,12 +8,9 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <DragView
-          style={styles.draggable}
-          dragItem="This will be shared when dropped"
-        >
+        <DragView style={styles.draggable} dragItem="Shared text">
           <View>
-            <Text style={styles.title}>Draggable with single item</Text>
+            <Text style={styles.title}>Draggable with a single item</Text>
             <Text style={styles.details}>
               Will share "Shared text" when dropped.
             </Text>
@@ -25,7 +22,7 @@ export default class App extends Component<{}> {
           dragItems={["First item", "Second item"]}
         >
           <View>
-            <Text style={styles.title}>Draggable with multiple item</Text>
+            <Text style={styles.title}>Draggable with multiple items</Text>
             <Text style={styles.details}>
               Will share "First item" and "Second item" when dropped.
             </Text>
@@ -44,6 +41,7 @@ const styles = StyleSheet.create({
     padding: 32
   },
   draggable: {
+    width: 300,
     backgroundColor: "#F5FCFF",
     borderRadius: 16,
     padding: 16,
