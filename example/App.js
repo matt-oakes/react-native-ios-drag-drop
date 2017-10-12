@@ -13,13 +13,21 @@ export default class App extends Component<{}> {
           dragItem="This will be shared when dropped"
         >
           <View>
-            <Text style={styles.welcome}>Draggable React Native View</Text>
-            <Text style={styles.instructions}>
-              On an iPad running iOS 11+ this will be draggable.
+            <Text style={styles.title}>Draggable with single item</Text>
+            <Text style={styles.details}>
+              Will share "Shared text" when dropped.
             </Text>
-            <Text style={styles.instructions}>
-              Long press on it to begin dragging and drop it onto another app in
-              split screen mode.
+          </View>
+        </DragView>
+
+        <DragView
+          style={styles.draggable}
+          dragItems={["First item", "Second item"]}
+        >
+          <View>
+            <Text style={styles.title}>Draggable with multiple item</Text>
+            <Text style={styles.details}>
+              Will share "First item" and "Second item" when dropped.
             </Text>
           </View>
         </DragView>
@@ -32,18 +40,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    alignItems: "flex-start",
+    padding: 32
   },
   draggable: {
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#F5FCFF",
+    borderRadius: 16,
+    padding: 16,
+    marginVertical: 16
   },
-  welcome: {
+  title: {
     fontSize: 20,
     textAlign: "center",
     margin: 10
   },
-  instructions: {
+  details: {
     textAlign: "center",
     color: "#333333",
     marginBottom: 5
