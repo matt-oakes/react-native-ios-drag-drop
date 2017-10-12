@@ -1,0 +1,27 @@
+{
+  "name": "react-native-react-native-ios-drag-drop",
+  "description": "",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn flow",
+    "flow": "flow"
+  },
+  "keywords": [
+    "react-native",
+    "drag-and-drop",
+    "ios"
+  ],
+  "author": "Matt Oakes <hello@mattoakes.net>",
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "react": ">=15.4.0 || ^16.0.0-alpha || ^16.0.0-beta || ^16.0.0",
+    "react-native": "^0.41.2"
+  },
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0",
+    "flow-bin": "^0.53.0",
+    "react": "16.0.0-beta.5",
+    "react-native": "~0.49.0"
+  }
+}

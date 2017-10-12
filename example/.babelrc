@@ -1,0 +1,14 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "react-native-ios-drag-drop": "../"
+        },
+        "cwd": "babelrc"
+      }
+    ]
+  ]
+}
