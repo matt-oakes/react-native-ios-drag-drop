@@ -8,7 +8,10 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <DragView style={styles.draggable} dragItems={["Sample", "Two"]}>
+        <DragView
+          style={styles.draggable}
+          dragItem="This will be shared when dropped"
+        >
           <View>
             <Text style={styles.welcome}>Draggable React Native View</Text>
             <Text style={styles.instructions}>

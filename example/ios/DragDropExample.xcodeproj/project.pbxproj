@@ -289,7 +289,6 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C9D53DA51F8F743C00505AEC /* MOReactNativeIosDragDrop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MOReactNativeIosDragDrop.xcodeproj; path = ../../ios/MOReactNativeIosDragDrop.xcodeproj; sourceTree = "<group>"; };
-		F7B006F7CCC84C72BD6938A3 /* libMOReactNativeIosDragDrop.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libMOReactNativeIosDragDrop.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,7 +464,6 @@
 				13B07FAE1A68108700A75B9A /* DragDropExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				C9D53D481F8F6FD900505AEC /* Recovered References */,
 				C9D53DAB1F8F744D00505AEC /* Frameworks */,
 			);
 			indentWidth = 2;
@@ -488,14 +486,6 @@
 				C9D53D271F8F6A4F00505AEC /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C9D53D481F8F6FD900505AEC /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				F7B006F7CCC84C72BD6938A3 /* libMOReactNativeIosDragDrop.a */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		C9D53DA61F8F743C00505AEC /* Products */ = {

@@ -1,4 +1,6 @@
 #import <UIKit/UIKit.h>
+#import <React/RCTLog.h>
+
 #import "RNDragViewManager.h"
 #import "MODragView.h"
 
@@ -15,9 +17,7 @@
 
 RCT_CUSTOM_VIEW_PROPERTY(dragItems, NSArray<MODragItem *>, MODragView)
 {
-    if ([json isKindOfClass:[NSString class]] && ![json isEqualToString:@""]) {
-        _dragItems = @[ [[MODragItem alloc] initWithTitle:json] ];
-    } else if ([json isKindOfClass:[NSArray class]]) {
+    if ([json isKindOfClass:[NSArray class]]) {
         NSMutableArray<MODragItem *> *dragItems = [[NSMutableArray alloc] init];
         [json enumerateObjectsUsingBlock:^(id _Nonnull possibleDragItem, NSUInteger index, BOOL * _Nonnull stop) {
             // TODO: This should be able to handle more complex cases with callbacks
@@ -28,6 +28,7 @@ RCT_CUSTOM_VIEW_PROPERTY(dragItems, NSArray<MODragItem *>, MODragView)
         
         _dragItems = [[NSArray alloc] initWithArray:dragItems];
     } else {
+        RCTLogWarn(@"RNDragViewManager was passed a dragItems prop with the wrong format\n\n%@", json);
         _dragItems = nil;
     }
     [view setDragItems:_dragItems];
