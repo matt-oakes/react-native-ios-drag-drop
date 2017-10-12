@@ -1,12 +1,8 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+//@flow
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-import DragDrop from "react-native-ios-drag-drop";
+import RNDragDrop from "react-native-ios-drag-drop";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -17,10 +13,11 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
-    console.log("DragDrop", DragDrop);
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <RNDragDrop>
+          <Text style={styles.welcome}>Welcome to React Native!</Text>
+        </RNDragDrop>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
