@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9D53DBD1F8F772000505AEC /* RNDragViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */; };
+		C9D53DBD1F8F772000505AEC /* MODragViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DAD1F8F753100505AEC /* MODragViewManager.m */; };
 		C9D53DE41F8FB66D00505AEC /* MODragItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DE31F8FB66D00505AEC /* MODragItem.m */; };
 		C9D53DE71F8FB9A000505AEC /* MODragView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DE61F8FB9A000505AEC /* MODragView.m */; };
+		C9D53DEA1F8FCD3700505AEC /* MODragPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DE91F8FCD3700505AEC /* MODragPreviewView.m */; };
+		C9D53DED1F8FCD4B00505AEC /* MODragPreviewViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DEC1F8FCD4B00505AEC /* MODragPreviewViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMOReactNativeIosDragDrop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMOReactNativeIosDragDrop.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDragViewManager.m; sourceTree = "<group>"; };
-		C9D53DAE1F8F753100505AEC /* RNDragViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDragViewManager.h; sourceTree = "<group>"; };
+		C9D53DAD1F8F753100505AEC /* MODragViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragViewManager.m; sourceTree = "<group>"; };
+		C9D53DAE1F8F753100505AEC /* MODragViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragViewManager.h; sourceTree = "<group>"; };
 		C9D53DE21F8FB66D00505AEC /* MODragItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragItem.h; sourceTree = "<group>"; };
 		C9D53DE31F8FB66D00505AEC /* MODragItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragItem.m; sourceTree = "<group>"; };
 		C9D53DE51F8FB9A000505AEC /* MODragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragView.h; sourceTree = "<group>"; };
 		C9D53DE61F8FB9A000505AEC /* MODragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragView.m; sourceTree = "<group>"; };
+		C9D53DE81F8FCD3700505AEC /* MODragPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragPreviewView.h; sourceTree = "<group>"; };
+		C9D53DE91F8FCD3700505AEC /* MODragPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragPreviewView.m; sourceTree = "<group>"; };
+		C9D53DEB1F8FCD4B00505AEC /* MODragPreviewViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragPreviewViewManager.h; sourceTree = "<group>"; };
+		C9D53DEC1F8FCD4B00505AEC /* MODragPreviewViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragPreviewViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -34,14 +40,42 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				C9D53DE51F8FB9A000505AEC /* MODragView.h */,
-				C9D53DE61F8FB9A000505AEC /* MODragView.m */,
-				C9D53DE21F8FB66D00505AEC /* MODragItem.h */,
-				C9D53DE31F8FB66D00505AEC /* MODragItem.m */,
-				C9D53DAE1F8F753100505AEC /* RNDragViewManager.h */,
-				C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */,
+				C9D53DEE1F8FCD8F00505AEC /* Drag */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		C9D53DEE1F8FCD8F00505AEC /* Drag */ = {
+			isa = PBXGroup;
+			children = (
+				C9D53DAE1F8F753100505AEC /* MODragViewManager.h */,
+				C9D53DAD1F8F753100505AEC /* MODragViewManager.m */,
+				C9D53DE51F8FB9A000505AEC /* MODragView.h */,
+				C9D53DE61F8FB9A000505AEC /* MODragView.m */,
+				C9D53DF01F8FCD9D00505AEC /* Data */,
+				C9D53DEF1F8FCD9500505AEC /* Preview */,
+			);
+			name = Drag;
+			sourceTree = "<group>";
+		};
+		C9D53DEF1F8FCD9500505AEC /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				C9D53DEB1F8FCD4B00505AEC /* MODragPreviewViewManager.h */,
+				C9D53DEC1F8FCD4B00505AEC /* MODragPreviewViewManager.m */,
+				C9D53DE81F8FCD3700505AEC /* MODragPreviewView.h */,
+				C9D53DE91F8FCD3700505AEC /* MODragPreviewView.m */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
+		C9D53DF01F8FCD9D00505AEC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C9D53DE21F8FB66D00505AEC /* MODragItem.h */,
+				C9D53DE31F8FB66D00505AEC /* MODragItem.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D53DE41F8FB66D00505AEC /* MODragItem.m in Sources */,
-				C9D53DBD1F8F772000505AEC /* RNDragViewManager.m in Sources */,
+				C9D53DEA1F8FCD3700505AEC /* MODragPreviewView.m in Sources */,
+				C9D53DED1F8FCD4B00505AEC /* MODragPreviewViewManager.m in Sources */,
+				C9D53DBD1F8F772000505AEC /* MODragViewManager.m in Sources */,
 				C9D53DE71F8FB9A000505AEC /* MODragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

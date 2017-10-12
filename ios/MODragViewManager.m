@@ -1,10 +1,10 @@
 #import <UIKit/UIKit.h>
 #import <React/RCTLog.h>
 
-#import "RNDragViewManager.h"
+#import "MODragViewManager.h"
 #import "MODragView.h"
 
-@implementation RNDragViewManager
+@implementation MODragViewManager
 
 #pragma mark - Props
 
@@ -16,6 +16,8 @@ RCT_CUSTOM_VIEW_PROPERTY(dragItems, NSArray<MODragItem *>, MODragView)
             // TODO: This should be able to handle more complex drag items too
             if ([possibleDragItem isKindOfClass:[NSString class]] && ![possibleDragItem isEqualToString:@""]) {
                 [dragItems addObject:[[MODragItem alloc] initWithTitle:possibleDragItem]];
+            } else {
+                RCTLogWarn(@"RNDragViewManager was passed a dragItem that was not a string\n\n%@", possibleDragItem);
             }
         }];
         
@@ -24,6 +26,11 @@ RCT_CUSTOM_VIEW_PROPERTY(dragItems, NSArray<MODragItem *>, MODragView)
         RCTLogWarn(@"RNDragViewManager was passed a dragItems prop with the wrong format\n\n%@", json);
         [view setDragItems:nil];
     }
+}
+
+RCT_CUSTOM_VIEW_PROPERTY(preview, RCTResponseSenderBlock, MODragView)
+{
+    NSLog(@"Incoming preview: %@", json);
 }
 
 #pragma mark - Setup and view handling
