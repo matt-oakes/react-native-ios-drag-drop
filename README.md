@@ -30,7 +30,7 @@ You can provide one drag item (`dragItem`) or multiple drag items (`dragItems`) 
 ### Usage
 
 With a single drag item:
-```babel
+```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
 export default function() {
@@ -43,7 +43,7 @@ export default function() {
 ```
 
 With a multiple drag items:
-```babel
+```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
 export default function() {
@@ -56,7 +56,7 @@ export default function() {
 ```
 
 With a URL drag items:
-```babel
+```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
 export default function() {
@@ -69,7 +69,7 @@ export default function() {
 ```
 
 With a custom preview view:
-```babel
+```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
 export default function() {
