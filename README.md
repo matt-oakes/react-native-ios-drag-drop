@@ -1,16 +1,16 @@
 
-# react-native-ios-drag-drop
+# `react-native-ios-drag-drop`
+Support for the iOS 11+ drag and drop API in React Native.
 
-## Getting started
+## Installation
 
-`$ npm install react-native-ios-drag-drop --save`
+`yarn add react-native-ios-drag-drop` or `npm install react-native-ios-drag-drop --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-ios-drag-drop`
+`react-native link react-native-ios-drag-drop`
 
 ### Manual installation
-
 
 #### iOS
 
@@ -20,11 +20,70 @@
 4. Run your project (`Cmd+R`)<
 
 
-## Usage
-```javascript
-import DragDrop from 'react-native-ios-drag-drop';
+## `DragView`
+The `DragView` allows you to make one of your React views draggable. A `DragView` has the same behaviour as a `View` except for it accepts a `dragItem` or `dragItems` prop (it must have _exactly_ one of these props).
 
-// TODO: What to do with the module?
-DragDrop;
+When used on an iOS 11+ iPad it will allow the user to long press on the view and drag it to a location which supports dropping (even across apps when used in multitasking mode).
+
+You can provide one drag item (`dragItem`) or multiple drag items (`dragItems`) and even customise the preview with any React view you like.
+
+### Usage
+
+With a single drag item:
+```javascript
+import { DragView } from 'react-native-ios-drag-drop';
+
+export default function() {
+  return (
+    <DragView dragItem="Shared text">
+      <Text>Draggable with a single item</Text>
+    </DragView>
+  );
+}
 ```
-  
+
+With a multiple drag items:
+```javascript
+import { DragView } from 'react-native-ios-drag-drop';
+
+export default function() {
+  return (
+    <DragView dragItems={["First item", "Second item"]}>
+      <Text>Draggable with multiple drag items</Text>
+    </DragView>
+  );
+}
+```
+
+With a URL drag items:
+```javascript
+import { DragView } from 'react-native-ios-drag-drop';
+
+export default function() {
+  return (
+    <DragView dragItem="https://mattoakes.net">
+      <Text>Draggable with a URL</Text>
+    </DragView>
+  );
+}
+```
+
+With a custom preview view:
+```javascript
+import { DragView } from 'react-native-ios-drag-drop';
+
+export default function() {
+  return (
+    <DragView dragItem="Custom preview">
+      <Text>Draggable with a custom preview</Text>
+      <DragView.Preview>
+        <Text>Custom preview</Text>
+      </DragView.Preview>
+    </DragView>
+  );
+}
+```
+
+## `DropView`
+
+*Not yet implemented*
