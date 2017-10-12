@@ -5,7 +5,7 @@
 #import <React/RCTViewManager.h>
 #endif
 
-@interface RNDragDropManager : RCTViewManager
+@interface RNDragViewManager : RCTViewManager
 
 @end
   

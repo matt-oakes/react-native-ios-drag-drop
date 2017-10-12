@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9D53DBD1F8F772000505AEC /* RNDragDropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DAD1F8F753100505AEC /* RNDragDropManager.m */; };
+		C9D53DBD1F8F772000505AEC /* RNDragViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */; };
+		C9D53DE41F8FB66D00505AEC /* MODragItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DE31F8FB66D00505AEC /* MODragItem.m */; };
+		C9D53DE71F8FB9A000505AEC /* MODragView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D53DE61F8FB9A000505AEC /* MODragView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMOReactNativeIosDragDrop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMOReactNativeIosDragDrop.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9D53DAD1F8F753100505AEC /* RNDragDropManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDragDropManager.m; sourceTree = "<group>"; };
-		C9D53DAE1F8F753100505AEC /* RNDragDropManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDragDropManager.h; sourceTree = "<group>"; };
+		C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDragViewManager.m; sourceTree = "<group>"; };
+		C9D53DAE1F8F753100505AEC /* RNDragViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDragViewManager.h; sourceTree = "<group>"; };
+		C9D53DE21F8FB66D00505AEC /* MODragItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragItem.h; sourceTree = "<group>"; };
+		C9D53DE31F8FB66D00505AEC /* MODragItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragItem.m; sourceTree = "<group>"; };
+		C9D53DE51F8FB9A000505AEC /* MODragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MODragView.h; sourceTree = "<group>"; };
+		C9D53DE61F8FB9A000505AEC /* MODragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODragView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -28,8 +34,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				C9D53DAE1F8F753100505AEC /* RNDragDropManager.h */,
-				C9D53DAD1F8F753100505AEC /* RNDragDropManager.m */,
+				C9D53DE51F8FB9A000505AEC /* MODragView.h */,
+				C9D53DE61F8FB9A000505AEC /* MODragView.m */,
+				C9D53DE21F8FB66D00505AEC /* MODragItem.h */,
+				C9D53DE31F8FB66D00505AEC /* MODragItem.m */,
+				C9D53DAE1F8F753100505AEC /* RNDragViewManager.h */,
+				C9D53DAD1F8F753100505AEC /* RNDragViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +98,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D53DBD1F8F772000505AEC /* RNDragDropManager.m in Sources */,
+				C9D53DE41F8FB66D00505AEC /* MODragItem.m in Sources */,
+				C9D53DBD1F8F772000505AEC /* RNDragViewManager.m in Sources */,
+				C9D53DE71F8FB9A000505AEC /* MODragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

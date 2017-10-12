@@ -1,14 +1,14 @@
-//@flow
+// @flow
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-import RNDragDrop from "react-native-ios-drag-drop";
+import { DragView } from "react-native-ios-drag-drop";
 
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <RNDragDrop style={styles.draggable}>
+        <DragView style={styles.draggable} dragItems={["Sample", "Two"]}>
           <View>
             <Text style={styles.welcome}>Draggable React Native View</Text>
             <Text style={styles.instructions}>
@@ -19,7 +19,7 @@ export default class App extends Component<{}> {
               split screen mode.
             </Text>
           </View>
-        </RNDragDrop>
+        </DragView>
       </View>
     );
   }
