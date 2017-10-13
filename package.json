@@ -2,6 +2,18 @@
   "name": "react-native-ios-drag-drop",
   "description": "Support for the iOS 11+ drag and drop API in React Native.",
   "version": "0.1.1",
+  "homepage": "https://github.com/matt-oakes/react-native-ios-drag-drop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-oakes/react-native-ios-drag-drop.git"
+  },
+  "author": "Matt Oakes <hello@mattoakes.net>",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "react-native",
+    "drag-and-drop",
+    "ios"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -14,13 +26,6 @@
     "shipit": "np",
     "prepublishOnly": "yarn clean && yarn build"
   },
-  "keywords": [
-    "react-native",
-    "drag-and-drop",
-    "ios"
-  ],
-  "author": "Matt Oakes <hello@mattoakes.net>",
-  "license": "BSD-3-Clause",
   "peerDependencies": {
     "react": ">=15.4.0 || ^16.0.0-alpha || ^16.0.0-beta || ^16.0.0",
     "react-native": "^0.41.2"
