@@ -13,10 +13,8 @@ type _BaseProps = {
 type _DataProps = { dragItem: string } | { dragItems: string[] };
 export type Props = _BaseProps & _DataProps;
 
-export default class DragView extends React.Component {
+export default class DragView extends React.Component<Props> {
   static Preview = DragPreviewView;
-
-  props: Props;
 
   render() {
     // $FlowExpectedError Flow doesn't like that we are getting both the dragItem and dragItems, but we need to get both to handle both cases
