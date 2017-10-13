@@ -24,6 +24,9 @@ You can provide one drag item (`dragItem`) or multiple drag items (`dragItems`) 
 
 ### Usage
 With a single drag item:
+
+![React Native iOS Drag Drop Single Item](https://raw.github.com/matt-oakes/react-native-ios-drag-drop/master/images/draggable-single-item.gif)
+
 ```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
@@ -37,6 +40,9 @@ export default function() {
 ```
 
 With a multiple drag items:
+
+![React Native iOS Drag Drop Multiple Items](https://raw.github.com/matt-oakes/react-native-ios-drag-drop/master/images/draggable-multiple-items.gif)
+
 ```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
@@ -50,6 +56,9 @@ export default function() {
 ```
 
 With a URL drag items:
+
+![React Native iOS Drag Drop URL](https://raw.github.com/matt-oakes/react-native-ios-drag-drop/master/images/draggable-url.gif)
+
 ```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
@@ -63,6 +72,9 @@ export default function() {
 ```
 
 With a custom preview view:
+
+![React Native iOS Drag Drop Custom Preview](https://raw.github.com/matt-oakes/react-native-ios-drag-drop/master/images/draggable-custom-preview.gif)
+
 ```jsx
 import { DragView } from 'react-native-ios-drag-drop';
 
