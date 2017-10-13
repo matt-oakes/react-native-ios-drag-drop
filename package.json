@@ -1,7 +1,7 @@
 {
   "name": "react-native-ios-drag-drop",
-  "description": "",
-  "version": "0.1.0",
+  "description": "Support for the iOS 11+ drag and drop API in React Native.",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -11,7 +11,7 @@
     "build": "yarn flow-copy && yarn build:es",
     "flow-copy": "flow-copy-source src lib",
     "build:es": "BABEL_ENV=es babel src --out-dir lib",
-    "publish": "np",
+    "shipit": "np",
     "prepublishOnly": "yarn clean && yarn build"
   },
   "keywords": [
