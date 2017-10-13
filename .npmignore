@@ -1,3 +1,4 @@
-example
 .babelrc
+example/
+src/
 yarn.lock

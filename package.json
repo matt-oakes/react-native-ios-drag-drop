@@ -6,7 +6,12 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "yarn flow",
-    "flow": "flow"
+    "flow": "flow",
+    "clean": "rimraf lib",
+    "build": "yarn flow-copy && yarn build:es",
+    "flow-copy": "flow-copy-source src lib",
+    "build:es": "BABEL_ENV=es babel src --out-dir lib",
+    "prepublishOnly": "yarn clean && yarn build"
   },
   "keywords": [
     "react-native",
@@ -20,10 +25,13 @@
     "react-native": "^0.41.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-preset-react-native": "^4.0.0",
     "flow-bin": "^0.53.0",
+    "flow-copy-source": "^1.2.1",
     "react": "16.0.0-beta.5",
-    "react-native": "~0.49.0"
+    "react-native": "~0.49.0",
+    "rimraf": "^2.6.2"
   }
 }
